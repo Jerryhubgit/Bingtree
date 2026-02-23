@@ -1,0 +1,39 @@
+@media(max-width: 77rem  ){
+    /* 
+        10px - 62.5 
+        9px - 
+    */
+    /* html{
+        font-size: 56.25% ;
+    } */
+    .left{
+        width: 50%;
+    }
+    .feature .right{
+        width: 90%;
+    }
+}
+
+@media(max-width: 66.25rem ){
+
+    html{
+        font-size: 59%;
+    }
+    .feature .right{
+        width: 100%;
+    }
+    .left{
+        width: 40%;
+    }
+    
+
+}
+@media(max-width: 62.5rem ){
+    .nav_links nav{
+        display: none;    
+    }
+    .center .right{
+        width: 100%;
+    }
+
+}
