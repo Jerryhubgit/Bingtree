@@ -167,3 +167,65 @@ header .buttons #signup{
     border-radius: 10px;
     margin: 15px 0;
 }
+
+
+.grid-home .advert .left-grid{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.grid-home .advert .left-top-grid{
+    background-color: yellow; 
+    border-radius: 20px;
+}
+.grid-home .advert .left-bottom-grid{
+    background-color: pink;
+    border-radius: 20px;
+}
+.grid-home .advert .right-grid{
+    background-color: blue;
+}
+.grid-home .advert .right-grid, 
+.grid-home .advert .left-bottom-grid,
+.grid-home .advert .left-top-grid 
+{
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.questions .advert{
+    flex-direction: column;
+    align-items: center;
+}
+.questions .questions-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.questions .questions-container .question{
+    background-color: hsl(0, 0%, 20%);
+    color: white;
+    padding: 20px;
+    width: 100%;
+    border-radius: 20px;
+}
+.question .question-body{
+    display: none;
+}
+.question .question-head{
+    padding: 15px 15px 20px 0;
+}
+
+footer .advert{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+}
+footer .advert > div{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
