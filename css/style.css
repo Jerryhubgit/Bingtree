@@ -220,7 +220,7 @@ header .buttons #signup{
 footer .advert{
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 40px;
     background-color: white;
     border-radius: 20px;
 }
