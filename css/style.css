@@ -4,7 +4,7 @@
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-decoration: none;
-    /* color: black; */
+    user-select: none;
 }
 :root{
     --border: 1px solid rgba(0,0,0,.2) ;
@@ -14,7 +14,6 @@
 }
 html{
     font-size: 62.5%;
-
 }
 h1{
     font-size: 5.5rem;
@@ -72,12 +71,13 @@ body{
     height: 100vh;
 }
 
+
 .advert{
     width: 90%;
     max-width: 1200px;
     /* border: var(--border); */
     display: flex;
-    gap: 2rem;
+    gap: 12rem;
 }
 .advert-content, 
 .advert-image{
@@ -89,6 +89,24 @@ body{
     gap: 2rem;
 }
 
+.home{
+    background-color: var(--grey);
+}
+.home .advert{
+    flex-direction: row-reverse;
+}
+.create{
+    background-color: green;
+}
+.share{
+    background-color: yellow;
+}
+.share .advert{
+    flex-direction: row-reverse;
+}
+
+
+/* ----------------- header ------------------ */
 header{
     display: flex;
     justify-content: space-between;
@@ -238,6 +256,10 @@ header .navlinks nav{
     font-size: 25px;
     color: white;
 }
+
+
+/* ------------------- footer -------------- */
+
 footer .advert{
     display: flex;
     flex-direction: column;
@@ -275,4 +297,34 @@ footer .advert small a{
     color: white;
     background-color: black;
     
+}
+
+
+
+/* ============= flex-box ================ */
+.advert-image{
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+}
+.advert-image .flex_top:nth-child(2){
+    flex-direction: row-reverse;
+}
+.advert-image .flex_top{
+    height: 100%;
+}
+.flex_top{
+    display: flex;
+    gap: 2rem;
+}
+.flex_top .flex_left{
+    width: 65%;
+    background-color: hsl(0, 0%, 5%);
+    border-radius: 30px;
+}
+.flex_top .flex_right{
+    border-radius: 30px;
+    width: 35%;
+    background-color: white;
+    border: var(--border);
 }
